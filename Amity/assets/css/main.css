@@ -2,93 +2,14 @@
 
 /* ========= Navbar ========= */
 body {
-    margin: 0;
+    padding-left: 20%;
+    padding-right: 20%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 0 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 66px;
-    z-index: 1001;
-}
-
-.green-container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #50be1c;
-    padding: 8px;
-    border-radius: 8px;
-}
-
-.header-navbar button {
-    background-color: #fff;
-    color: black;
-    font-weight: bold;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 6px 16px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    line-height: 18px;
-    min-height: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    transition: box-shadow 0.3s;
-}
-
-.header-navbar button:hover {
-    background-color: #50be1c;
-    box-shadow: 0 0 10px #50be1c, 0 0 30px #50be1c, 0 0 60px #50be1c;
-}
-
-
-.header-navbar ul.nav-list li {
-    padding: 0 5px;
-}
-
-.header-navbar ul.nav-list li a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 10px;
-}
-
-.green-container,
-.header-navbar ul.nav-list li a {
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 0 5px;
-    transition: box-shadow 0.3s;
-}
-
-.header-navbar ul.nav-list li a:hover,
-.header-navbar button:hover {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #50be1c, 0 0 30px #50be1c, 0 0 60px #50be1c;
-}
-
-
-
-.header-navbar {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 0 30px;
@@ -148,29 +69,6 @@ body {
     position: relative;
 }
 
-.header-navbar button {
-    font-size: 13px;
-    line-height: 18px;
-    padding: 6px 16px;
-    min-height: 32px;
-    background-color: #fff;
-    cursor: pointer;
-    font-family: var(--self-font-family);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    font-weight: var(--semi-bold);
-    color: var(--primary-text);
-    border-radius: var(--corner-radius-small);
-    border: 1px solid transparent;
-    text-decoration: none;
-    display: inline-flex;
-}
-
 ul.sub-list {
     display: none;
     position: absolute;
@@ -210,17 +108,6 @@ ul.sub-list li a {
     }
 }
 
-
-/* ========= Mobile Navbar ========= */
-.mobile-nav {
-    height: calc(100vh - 66px);
-    position: fixed;
-    top: 66px;
-    z-index: 5;
-    width: 100%;
-    background-color: #fff;
-}
-
 .mobile-nav .list .list-item {
     display: flex;
     align-items: center;
@@ -250,7 +137,6 @@ ul.sub-list li a {
     justify-content: center;
     align-items: center;
 }
-
 
 /*hero*/
 
