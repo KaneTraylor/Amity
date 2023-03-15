@@ -235,6 +235,7 @@ ul.sub-list li a {
     height: 20%;
     border: 1px solid black;
     margin-bottom: 100px;
+    border-radius: 15px;
 }
 
 .icon_Box {
@@ -251,4 +252,9 @@ ul.sub-list li a {
     justify-content: space-between;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+.text_Box {
+    min-height: 400px;
+    border: 1px solid black;
 }
