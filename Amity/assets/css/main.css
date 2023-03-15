@@ -261,3 +261,14 @@ ul.sub-list li a {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.first_Row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first_Box {
+    width: 30%;
+    height: 20%;
+    border: 1px solid black;
+}
