@@ -216,7 +216,7 @@ ul.sub-list li a {
 }
 
 .first_Container {
-    min-height: 800px;
+    min-height: 600px;
     width: 90%;
     display: flex;
     align-items: center;
@@ -234,10 +234,10 @@ ul.sub-list li a {
     width: 30%;
     height: 20%;
     border: 1px solid black;
+    margin-bottom: 100px;
 }
 
 .icon_Box {
-    border: 1px solid black;
     width: 90%;
     min-height: 200px;
     display: flex;
@@ -245,9 +245,10 @@ ul.sub-list li a {
 }
 
 .icons {
-    border: 1px solid black;
     height: 75%;
-    width: 15%;
+    width: 50px;
     display: flex;
     justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
 }
