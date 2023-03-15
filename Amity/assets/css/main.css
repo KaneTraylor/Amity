@@ -254,7 +254,26 @@ ul.sub-list li a {
     border-radius: 10px;
 }
 
+.slogan_Box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .text_Box {
     min-height: 400px;
+    width: 30%;
     border: 1px solid black;
+    margin-top: 150px;
+    font-size: 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.picture_Box {
+    min-height: 400px;
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 150px;
 }
