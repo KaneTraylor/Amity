@@ -2,7 +2,6 @@
 
 /* ========= Navbar ========= */
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,21 +15,12 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 66px;
+    height: 76px;
     z-index: 1001;
 }
 
-.green-container {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #50be1c;
-    padding: 8px;
-    border-radius: 8px;
-}
-
 .header-navbar button {
-    background-color: #fff;
+    background-color: #ffffff;
     color: black;
     font-weight: bold;
     border: 1px solid transparent;
@@ -46,58 +36,7 @@ body {
     min-height: 32px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    transition: box-shadow 0.3s;
-}
-
-.header-navbar button:hover {
-    background-color: #50be1c;
-    box-shadow: 0 0 10px #50be1c, 0 0 30px #50be1c, 0 0 60px #50be1c;
-}
-
-
-.header-navbar ul.nav-list li {
-    padding: 0 5px;
-}
-
-.header-navbar ul.nav-list li a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 0 10px;
-}
-
-.green-container,
-.header-navbar ul.nav-list li a {
-    background-color: #ffffff;
-    padding: 8px;
-    border-radius: 8px;
-    margin: 0 5px;
-    transition: box-shadow 0.3s;
-}
-
-.header-navbar ul.nav-list li a:hover,
-.header-navbar button:hover {
-    background-color: #ffffff;
-    box-shadow: 0 0 10px #50be1c, 0 0 30px #50be1c, 0 0 60px #50be1c;
-}
-
-
-
-.header-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 0 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 66px;
-    z-index: 1001;
+    margin-left: 40px;
 }
 
 .header-navbar ul.nav-list {
@@ -122,7 +61,7 @@ body {
 
 .header-navbar button {
     background-color: #000000;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -139,6 +78,11 @@ body {
     text-align: center;
 }
 
+.header-navbar .logo {
+    max-height: 60px;
+    margin-right: 15px;
+}
+
 .header-navbar button:hover {
     background-color: #50be1c;
 }
@@ -146,29 +90,6 @@ body {
 .drop-list {
     border-radius: 8px 8px 0 0 !important;
     position: relative;
-}
-
-.header-navbar button {
-    font-size: 13px;
-    line-height: 18px;
-    padding: 6px 16px;
-    min-height: 32px;
-    background-color: #fff;
-    cursor: pointer;
-    font-family: var(--self-font-family);
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    text-align: center;
-    font-weight: var(--semi-bold);
-    color: var(--primary-text);
-    border-radius: var(--corner-radius-small);
-    border: 1px solid transparent;
-    text-decoration: none;
-    display: inline-flex;
 }
 
 ul.sub-list {
@@ -210,16 +131,49 @@ ul.sub-list li a {
     }
 }
 
-
-/* ========= Mobile Navbar ========= */
-.mobile-nav {
-    height: calc(100vh - 66px);
-    position: fixed;
-    top: 66px;
-    z-index: 5;
-    width: 100%;
-    background-color: #fff;
+/* Hide mobile-header for larger screens */
+@media (min-width: 771px) {
+    .header-navbar .mobile-header {
+        display: none;
+    }
 }
+
+/* Show mobile-header and hide desktop navigation for smaller screens */
+@media (max-width: 770px) {
+    .header-navbar .nav-list {
+        display: none;
+    }
+
+    .header-navbar .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-navbar .mobile-logo {
+        max-height: 40px;
+    }
+
+    .header-navbar .hamburger-menu {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header-navbar .hamburger-line {
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+}
+
 
 .mobile-nav .list .list-item {
     display: flex;
@@ -250,7 +204,6 @@ ul.sub-list li a {
     justify-content: center;
     align-items: center;
 }
-
 
 /*hero*/
 
