@@ -376,8 +376,6 @@ ul.sub-list li a {
 
 .overlap-container {
     position: relative;
-    top: -50px;
-    z-index: 1;
 }
 
 @media (max-width: 770px) {
@@ -408,7 +406,46 @@ ul.sub-list li a {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 55px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-box-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -50px;
+}
+
+.small-box-header h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: rgba(46, 40, 40, 0.75);
+    margin-bottom: 0px;
+}
+
+.small-box-header p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: rgba(46, 40, 40, 0.75);
+    margin-bottom: 0px;
+    padding-top: 14px;
+}
+
+.hero-box {
+    position: absolute;
+    left: 15%;
+    bottom: 285px;
+    transform: translateY(-100%);
+    transform: translateX(-75%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 65px;
 }
 
 .footer_Box {
