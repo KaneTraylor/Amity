@@ -366,7 +366,7 @@ ul.sub-list li a {
 
 .background-image-section {
     width: 50%;
-    height: 65vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,8 +524,9 @@ ul.sub-list li a {
     padding: 20px;
     transform: translateY(-10%);
     border-radius: 5px;
-    margin-bottom: 55px;
+    margin-bottom: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 100);
+
 }
 
 .small-box-header {
@@ -608,12 +609,26 @@ ul.sub-list li a {
 
 }
 
+.quick-links-background {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(75, 197, 51));
+    padding: 40px 0;
+}
+
+.prompt-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 50px !important;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800 !important;
     font-style: normal;
     font-size: 50px !important;
-    color: #000000;
+    color: #160f0f;
     margin-bottom: 0.5rem;
 }
 
