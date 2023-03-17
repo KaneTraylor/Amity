@@ -76,6 +76,19 @@
 .main .btn-secondary {
     background: none !important;
     color: #009DE0 !important;
+    border: 2px solid #ffffff !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal;
+    box-sizing: border-box;
+    border-radius: 8px !important;
+    margin-left: 16px !important;
+    padding: 20%;
+}
+
+.btn-secondary {
+    background: none !important;
+    color: #009DE0 !important;
     border: 2px solid #009DE0 !important;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 600 !important;
@@ -83,6 +96,21 @@
     box-sizing: border-box;
     border-radius: 8px !important;
     margin-left: 16px !important;
+    padding: 20%;
+}
+
+.btn-primary {
+    background-color: #009DE0 !important;
+    border: none !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: normal;
+    size: 14px !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    line-height: 1 !important;
+    padding: 20%;
 }
 
 @media (max-width: 768px) {
@@ -366,7 +394,7 @@ ul.sub-list li a {
 
 .background-image-section {
     width: 50%;
-    height: 65vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -524,8 +552,9 @@ ul.sub-list li a {
     padding: 20px;
     transform: translateY(-10%);
     border-radius: 5px;
-    margin-bottom: 55px;
+    margin-bottom: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 100);
+
 }
 
 .small-box-header {
@@ -559,9 +588,9 @@ ul.sub-list li a {
 .hero-box {
     position: absolute;
     left: 15%;
-    bottom: 560px;
-    transform: translateY(-200%);
-    transform: translateX(145%);
+    bottom: 480px;
+    transform: translateY(-150%);
+    transform: translateX(120%);
     background-color: rgba(255, 255, 255, 0.9);
     padding: 85px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 100);
@@ -603,9 +632,25 @@ ul.sub-list li a {
 
 .prompt-section {
     margin-bottom: 100px;
-    padding-left: 35%;
-    padding-right: 35%;
+    background-color: #ffffff;
 
+}
+
+/*
+
+.quick-links-background {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(75, 197, 51));
+    padding: 40px 0;
+}
+*/
+
+.prompt-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-size: 50px !important;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -613,7 +658,7 @@ h1 {
     font-weight: 800 !important;
     font-style: normal;
     font-size: 50px !important;
-    color: #000000;
+    color: #160f0f;
     margin-bottom: 0.5rem;
 }
 
@@ -689,9 +734,9 @@ h6 {
 .quick-link-box {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 100);
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
 }
