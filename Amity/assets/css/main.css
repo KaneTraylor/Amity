@@ -519,12 +519,6 @@ ul.sub-list li a {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 100);
 }
 
-.girl-with-binoculars {
-
-    width: 50px;
-    height: 50px;
-}
-
 .mission-box {
     position: absolute;
     left: 15%;
@@ -555,4 +549,12 @@ ul.sub-list li a {
 .footer_Box {
     display: flex;
     justify-content: center;
+}
+
+/* ========= Prompt section  ========= */
+
+.prompt-section {
+    margin-bottom: 200px;
+    padding-left: 35%;
+    padding-right: 35%;
 }
