@@ -355,27 +355,74 @@ ul.sub-list li a {
 .text_Box {
     min-height: 400px;
     width: 30%;
-    border: 1px solid black;
     margin-top: 150px;
     font-size: 6rem;
     text-align: center;
     display: flex;
     align-items: center;
+    border-radius: 5px;
 }
 
 .picture_Box {
     min-height: 400px;
     width: 30%;
-    border: 1px solid black;
     margin-top: 150px;
-    background-image: url(../images/pexels-elina-fairytale-4543633.jpg);
+    transition-duration: 2s;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.overlap-container {
-    position: relative;
+.text_Pic {
+    position: absolute;
+    min-height: 400px;
+    width: 30%;
+}
+
+#home {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    color: black;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: large;
+    transition: all .25s;
+    z-index: 1;
+    display: none;
+}
+
+#home:hover {
+    border-color: rgb(160, 14, 14);
+    color: white;
+    box-shadow: 0 10px 10px -8px rgb(160, 14, 14);
+    transform: translatey(-4px);
+    cursor: pointer;
+}
+
+#home:hover .picture_Box {
+    background: rgba(0, 0, 0, .3);
+}
+
+#home:hover .text_Pic {
+    opacity: .3;
+}
+
+.picture_Box:hover #home {
+    display: block;
+    transition-duration: .5;
+}
+
+.picture_Box:hover {
+    background: rgba(0, 0, 0, .3);
+    transition: all .25s;
+}
+
+.text_Pic:hover {
+    opacity: .3;
+    transition: all .5s;
 }
 
 @media (max-width: 770px) {
@@ -443,7 +490,7 @@ ul.sub-list li a {
     left: 15%;
     bottom: 285px;
     transform: translateY(-100%);
-    transform: translateX(-75%);
+
     background-color: rgba(255, 255, 255, 0.9);
     padding: 65px;
 }
