@@ -522,6 +522,7 @@ ul.sub-list li a {
 .small-box {
     background-color: white;
     padding: 20px;
+    transform: translateY(-10%);
     border-radius: 5px;
     margin-bottom: 55px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 100);
