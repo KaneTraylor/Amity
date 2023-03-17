@@ -724,3 +724,49 @@ h6 {
 }
 
 /* ========= Prompt section end  ========= */
+
+/*===== Popular Listings =====*/
+
+.row_Box {
+    width: 100%;
+    max-height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.listing_Text_Box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.master_Box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.listing_Box {
+    min-width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.57);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.listing_Pic {
+    height: 250px;
+    width: 300px;
+    background-image: url(../images/terrah-holly-pmhdkgRCbtE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box
+}
+
+.listing_Pic img {
+    max-width: 100%;
+    display: inline;
+}
